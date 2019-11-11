@@ -1,0 +1,13 @@
+This is a proof of concept of a covert command and control channel implemented using TCP steganography.
+
+Setup:
+
+  1. create two ubuntu instances in vmware or docker
+  2. copy server.py and steghelper.py to one instance as the "server"
+  3. copy client.py and steghelper.py to the other instance as the "client"
+  4. change the "dst" and "IFACE" gloabl variable in server.py to match the client's IP address and interface
+  5. chnage the "dst" and "IFACE" global variable in client.py to macth the server's IP address and interface
+  6. install and start apache on the server
+  7. run server.py on the server
+  8. run client.py and the client
+ 
